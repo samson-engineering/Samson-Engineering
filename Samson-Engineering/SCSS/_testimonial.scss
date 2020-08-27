@@ -1,0 +1,118 @@
+/* Scss Document */
+@media (min-width:$adapt--desk){
+	.testimonial{
+		top: $testimonial--top;
+		position:relative;
+
+		>div{
+			top: $testimonial--top;
+			border-top: $border;
+			width: $testimonial--width--desk;
+			height: $testimonial--height;
+			padding-top: $padding;
+			position: sticky;
+			position: webkit-sticky;
+			background-color:$bg-color;
+			vertical-align: middle;
+
+		}
+		>.testimonial--diane{
+			left:$testimonial--right;
+			top:$testimonial--top;
+			margin:0;
+		}
+		>.testimonial--terry{
+			left:$testimonial--left;
+			top:$testimonial--top;
+			margin:0;
+		}
+		>.testimonial--keith{
+			left:$testimonial--right;
+			top:$testimonial--top;
+			margin:0;
+		}
+		>.testimonial--steve{
+			left:$testimonial--left;
+			top:$testimonial--top;
+			margin:0;
+		}
+		>.testimonial--annette{
+			left:$testimonial--right;
+			top:$testimonial--top;
+			margin:0;
+		}
+	}
+}
+@media (min-width: $adapt--tab) and (max-width:($adapt--desk - 1px)){
+		.testimonial{
+		top: $testimonial--top;
+		position:relative;
+			justify-content: center;
+
+		>div{
+			top: $testimonial--top;
+			border-top: $border;
+			width: $testimonial--width--tab;
+			height: $testimonial--height;
+			padding-top: $padding;
+			position: sticky;
+			position: webkit-sticky;
+			background-color:$nav--bg-color;
+			margin:0;
+			left: $testimonial--left--tab;
+			padding-left: $testimonial--padding;
+			padding-right: $testimonial--padding;
+			
+
+		}
+		
+	}
+}
+@media (min-width: ($adapt--phone)) and (max-width:($adapt--tab - 1)){
+		.testimonial{
+		top: $testimonial--top--phone;
+		position:relative;
+
+		>div{
+			top: $testimonial--top--phone;
+			border-top: $border;
+			width: $testimonial--width--phone;
+			height: $testimonial--height;
+			padding-top: $testimonial--padding;
+			position: sticky;
+			position: webkit-sticky;
+			background-color:$nav--bg-color;
+			margin:0;
+			left: $testimonial--left--phone;
+			padding-left: $testimonial--padding;
+			padding-right: $testimonial--padding;
+			
+
+		}
+		
+	}
+}
+@media (max-width:($adapt--phone - 1)){
+		.testimonial{
+		top: $testimonial--top--phone;
+		position:relative;
+			justify-content: center;
+
+		>div{
+			position: inherit;
+//			top: $testimonial--top--phone;
+			border-top: $border;
+			width: $testimonial--width--phone;
+			padding-top: $testimonial--padding;
+			padding-bottom: 4*$testimonial--padding;
+			background-color:$nav--bg-color;
+			margin:0;
+			left: $testimonial--left--phone;
+			padding-left: $testimonial--padding;
+			padding-right: $testimonial--padding;
+			
+
+		}
+		
+	}
+}

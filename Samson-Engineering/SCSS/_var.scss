@@ -1,0 +1,62 @@
+/* Scss Document */
+$font1:'raleway',sans-serif;
+$font--color: black;
+
+$nav--height: 15vh;
+$nav--height--phone : 185px;
+$nav--margin: 10px;
+$nav--bg-color: white;
+$nav--padding--phone:25px;
+$nav--font-size: 1.2rem;
+$nav--font-weight: 600;
+
+
+$about--width--desk: 50vw;
+$about--width--tab: 75vw;
+$about--width--phone: 80vw;
+$about--width--sphone: 90vw; 
+$about--padding:30px;
+$h1--size--desk: 2.2rem;
+$h1--size--phone: 1.4rem;
+$h2--size--desk: 1.7rem;
+$h2--size--phone: 1.2rem;
+$bg-color: white;
+
+$transition:300ms;
+
+$border: 2px solid black;
+$border--invisible: 2px solid transparent;
+$border--highlight:2px solid orange;
+$border-radius: 15px;
+
+$padding:20px;
+
+$testimonial--top: 25vh;
+$testimonial--top--phone: 26vh;
+$testimonial--width--desk: 30vw;
+$testimonial--width--tab: 65vw;
+$testimonial--width--phone: 80vw;
+$testimonial--height: 100vh - $testimonial--top;
+$testimonial--padding: 3vw;
+$testimonial--left: 13vw;
+$testimonial--left--tab: (100vw - ($testimonial--width--tab + $testimonial--padding))/2;
+$testimonial--left--phone: (100vw - ($testimonial--width--phone + $testimonial--padding))/2;
+$testimonial--right: 100vw - ($testimonial--left + $testimonial--width--desk);
+
+$contact--font-size:1.5rem;
+$contact--font-weight:400;
+$contact--line-height:1.5;
+$contact--color:red;
+$contact--background-color:grey;
+$contact--width--desk: 50vw;
+$contact--width--tab: 60vw;
+$contact--width--phone: 70vw;
+$contact--height: 30vh;
+$contact--input--height: 2rem;
+$contact--top--desk:30vh;
+$contact--top--tab:25vh;
+$contact--top--phone:26vh;
+
+$adapt--desk:992px;
+$adapt--tab:768px;
+$adapt--phone:480px;

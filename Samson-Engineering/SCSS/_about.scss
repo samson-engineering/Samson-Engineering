@@ -1,0 +1,90 @@
+/* Scss Document */
+.about--scroll{overflow-y: auto}
+.about--container{
+	display: flex;
+	position: relative;
+	width:100vw;
+	height:100vh;
+	justify-content: center;
+	font-family: $font1;
+}
+
+
+//desktop
+@media (min-width:$adapt--desk){
+	.about{
+	position:absolute;
+    width:$about--width--desk;
+    top:$nav--height*1.2;
+	>h1{
+		text-align: center;	
+		border-bottom: $border;
+		padding-bottom: $about--padding;
+		font-size: $h1--size--desk;
+	}
+	>h2{
+		border-top: $border;
+		padding-top: $about--padding;
+	}
+
+}
+}
+//tablet
+@media (min-width: $adapt--tab) and (max-width:($adapt--desk - 1px)){
+.about{
+	position:absolute;
+    width:$about--width--tab;
+    top:$nav--height*1.2;
+	>h1{
+		text-align: center;	
+		border-bottom: $border;
+		padding-bottom: $about--padding;
+		font-size: $h1--size--desk;
+	}
+	>h2{
+		border-top: $border;
+		padding-top: $about--padding;
+	}
+
+}
+}
+//large phone
+@media (min-width: $adapt--phone) and (max-width: ($adapt--tab - 1px)){
+.about{
+	position:absolute;
+    width:$about--width--phone;
+    top:$nav--height*1.4;
+	>h1{
+		text-align: center;	
+		border-bottom: $border;
+		padding-bottom: $about--padding;
+		font-size: $h1--size--phone;
+	}
+	>h2{
+		border-top: $border;
+		padding-top: $about--padding;
+		font-size: $h2--size--phone;
+	}
+
+}
+}
+//small phone
+@media (max-width: ($adapt--phone - 1px)){
+.about{
+	position:absolute;
+    width:$about--width--sphone;
+    top:$nav--height*1.4;
+	>h1{
+		text-align: center;	
+		border-bottom: $border;
+		padding-bottom: $about--padding;
+		font-size: $h1--size--phone;
+	}
+	>h2{
+		border-top: $border;
+		padding-top: $about--padding;
+		font-size: $h2--size--phone;
+	}
+
+}
+}

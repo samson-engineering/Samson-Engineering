@@ -1,0 +1,94 @@
+
+
+.contact{
+	width:100;
+	height:100;
+	display:flex;
+	position:relative;
+	justify-content: center;
+}
+.contact--header{
+	position: absolute;
+	top:20vh;
+	z-index: 2;
+}
+form{
+	position:absolute;
+	margin:0;
+	font-family:$font1;
+	font-size:$contact--font-size;
+	font-weight:$contact--font-weight;
+	line-height:$contact--line-height;
+	color:$contact--color;
+//	background-color: $contact--background-color;
+	padding:$padding;
+//	border:$border;
+//	border-radius:$border-radius;
+}
+
+input{
+	height:$contact--input--height;
+	margin-bottom: 1.5rem;
+
+}
+
+
+input,
+textarea,
+button{
+	text-decoration: none;
+	background-image: none;
+	background-color:$bg-color;
+	 box-shadow: none;
+	 border: none;
+	 border-bottom: $border--invisible;
+	border-top:$border--invisible;
+	font-family: $font1;
+	font-size:100%;
+	transition:$transition;
+	}
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button:hover,
+button:focus{
+	border-bottom: $border--highlight;
+}
+textarea:hover,
+textarea:focus{
+	border-top:$border--highlight;
+}
+
+::placeholder{
+	font-family: $font1;
+	font-size: $contact--font-size;
+	color:$font--color;
+}
+
+input:focus,
+textarea:focus{
+	>::placeholder{
+		color:$bg-color;
+	}
+}
+@media (min-width: $adapt--desk){
+	form{width:$contact--width--desk;
+		top: $contact--top--desk
+	}
+	input{width:$contact--width--desk;}
+	textarea{width:$contact--width--desk;}
+}
+@media (min-width: $adapt--tab) and (max-width: $adapt--desk - 1){
+	form{width:$contact--width--tab;
+		top: $contact--top--tab
+	}
+	input{width:$contact--width--tab;}
+	textarea{width:$contact--width--tab;}
+}
+@media (max-width: $adapt--tab - 1){
+	form{width:$contact--width--phone;
+		top:$contact--top--phone;}
+	input{width:$contact--width--phone;}
+	textarea{width:$contact--width--phone;}
+}

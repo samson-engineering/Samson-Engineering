@@ -1,0 +1,25 @@
+/* Scss Document */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  font-family: sans-serif;
+  background-color: lightslategrey;
+}
+
+.about {
+  position: absolute;
+  width: 50vw;
+  top: 20vh;
+  left: 25vw;
+}
+.about > h1 {
+  text-align: center;
+}
+.about > img {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 25vw;
+  object-fit: fill;
+}
